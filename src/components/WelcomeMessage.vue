@@ -1,16 +1,18 @@
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
+<script>
+  export default {
+    data () {
+      return {
+      }
+    },
+    props: {
+      greetingMessage: String
+    }
   }
-})
 </script>
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    
+    <h1 class="green">{{ greetingMessage }}</h1>
   </div>
 </template>
 
