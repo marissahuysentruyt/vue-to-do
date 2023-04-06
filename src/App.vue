@@ -1,29 +1,31 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-import TheWelcome from './components/TheWelcome.vue';
+  import WelcomeMessage from './components/WelcomeMessage.vue';
+  import ToDoList from "./components/ToDoList.vue";
+  
   export default {
     data () {
       return {
+        "altText": "Vue logo",
+        "logoSrc": "./src/assets/logo.svg",
       }
     },
     components: {
-      HelloWorld,
-      TheWelcome,
+      WelcomeMessage,
+      ToDoList,
     }
-}
+  }
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
+    <img :alt="altText" class="logo" :src="logoSrc" width="125" height="125" />
     <div class="wrapper">
-      <HelloWorld msg="What do you have to do today?" />
+      <WelcomeMessage greetingMessage="What do you have to do today?" />
     </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <ToDoList />
   </main>
 </template>
 
