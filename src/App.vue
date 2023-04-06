@@ -1,6 +1,16 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script>
+import HelloWorld from './components/HelloWorld.vue';
+import TheWelcome from './components/TheWelcome.vue';
+  export default {
+    data () {
+      return {
+      }
+    },
+    components: {
+      HelloWorld,
+      TheWelcome,
+    }
+}
 </script>
 
 <template>
